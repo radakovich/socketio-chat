@@ -3,6 +3,8 @@ extends layout
 block content
   script(src='/socket.io/socket.io.js')
   script(src='js/socket.js')
-  
+
   #message-window.chat-room
-    button(type='submit', onclick='sendMessage()')
+    #message-input.chat
+      input(type='text')
+      button(type='submit', onclick='sendMessage()') Send

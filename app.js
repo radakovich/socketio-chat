@@ -37,9 +37,7 @@ server.listen(app.get('port'), function(){
 });
 
 io.sockets.on('connection', function(socket){
-  console.log('starting socket');
   socket.on('message', function(data){
-    console.log('received a message');
     socket.emit('broadcastMessage', data);
   });
 });
