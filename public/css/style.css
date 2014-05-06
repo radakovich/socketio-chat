@@ -6,3 +6,10 @@ body {
 a {
   color: #00B7FF;
 }
+
+.chat-room {
+	width: 560px;
+	margin: auto;
+	padding: 2em;
+	height: 100%;
+}
